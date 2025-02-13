@@ -3,7 +3,7 @@
     <h2 class='header'>Create Blog</h2>
     <form @submit.prevent="handlePostSubmit">
       <label for="title">Title:</label>
-      <input type="text" v-model="title" />
+      <input type="text" v-model="title" required/>
       <label for="content">Content:</label>
       <textarea
         name="c"
@@ -11,11 +11,13 @@
         cols="30"
         rows="10"
         v-model="content"
+        required
       ></textarea>
       <label for="tag">Tag (Hit enter to add tags):</label>
-      <input type="text" v-model="tag" @keydown.enter.prevent="handleKeyDown" />
+      <input type="text" v-model="tag" @keydown.enter.prevent="handleKeyDown" required/>
       <div v-for="tag in tags" :key="tag" class="pill">#{{ tag }}</div>
       <button>Add Post</button>
+      <button @click="handlHome">Back to home</button>
     </form>
   </div>
 </template>
@@ -37,6 +39,9 @@ export default {
       }
       tag.value = "";
     };
+    const handlHome = () => {
+      rounter.push('/');
+    }
     const handlePostSubmit = async () => {
       const newPost = {
         title: title.value,
@@ -52,7 +57,7 @@ export default {
       rounter.push('/');
 
     };
-    return { title, content, tag, tags, handleKeyDown, handlePostSubmit };
+    return { title, content, tag, tags, handleKeyDown, handlePostSubmit, handlHome };
   },
 };
 </script>
@@ -107,7 +112,7 @@ label::before {
 button {
   display: block;
   margin-top: 30px;
-  background: #ff8800;
+  background: #9b590d;
   color: white;
   border: none;
   padding: 8px 16px;
