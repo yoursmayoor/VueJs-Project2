@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "title": "Post1",
+      "body": "I just wanted to let you know that I've now added a new chapter near the end of the course all about using Vue 3 with Firebase 9. Version 9 of Firebase adopts a more modular & functional approach, which takes advantage of something called 'tree-shaking'. This means that any unused Firebase code is ' shaken' out of our final production bundles, leading to a better performance.",
+      "id": "1",
+      "tags": [
+        "HTML",
+        "Java",
+        "Javascirpt"
+      ]
+    },
+    {
+      "title": "Post2",
+      "body": "post2 body",
+      "id": "2",
+      "tags": [
+        "HTML",
+        "CSS",
+        "Javascirpt"
+      ]
+    },
+    {
+      "title": "Post3",
+      "body": "post3 body",
+      "id": "3",
+      "tags": [
+        "HTML",
+        "CSS",
+        "Javascirpt"
+      ]
+    },
+    {
+      "id": "991c",
+      "title": "New Post",
+      "body": "New post added for Content",
+      "tags": [
+        "HTML",
+        "CSS",
+        "Javascirpt"
+      ]
+    },
+    {
+      "id": "1283",
+      "title": "testing 1",
+      "body": "testing 1",
+      "tags": [
+        "Photoshop"
+      ]
+    }
+  ]
+}
