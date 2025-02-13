@@ -14,7 +14,7 @@
         required
       ></textarea>
       <label for="tag">Tag (Hit enter to add tags):</label>
-      <input type="text" v-model="tag" @keydown.enter.prevent="handleKeyDown" required/>
+      <input type="text" v-model="tag" @keydown.enter.prevent="handleKeyDown" />
       <div v-for="tag in tags" :key="tag" class="pill">#{{ tag }}</div>
       <button>Add Post</button>
       <button @click="handlHome">Back to home</button>
