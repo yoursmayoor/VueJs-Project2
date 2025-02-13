@@ -5,6 +5,10 @@
 yarn install
 ```
 
+### First Run Json Server before build
+```
+json-server --watch data/data.json  
+```
 ### Compiles and hot-reloads for development
 ```
 yarn serve
